@@ -35,7 +35,7 @@ nav {
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
-  width: 50%;
+  width: 75%;
   padding-right: 5%;
   
   text-align: center;
@@ -79,44 +79,117 @@ h1{
 }
 
 .game-design {
-  background-color: coral;
+  background-color: lightseagreen;
+}
+
+.art {
+  background-color: lightsalmon;
 }
 
 .about {
+  background-color: lightslategray;
+}
+
+.coding {
   background-color: lightgreen;
 }
 
 .home {
   background-color: lightblue;
+  display: flex;
+  flex-direction: column;
 }
 
 .carousel-box {
   position: relative;
   display: inline-block;
   margin: 10px;
+  padding-bottom: 27px;
 }
 
 .carousel-name {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: yellow;
+  /* background-color: yellow; */
   color: black;
   padding: 5px;
-  font-size: 14px;
+  font-size: 30px;
+  width: 300px;
+  text-align: left;
+  padding-left: 15px;
+  z-index: 2;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
 }
 
-.triangle-left {
+.triangle-art {
   width: 0;
   height: 0;
-  border-top: 15px solid transparent;
-  border-right: 30px solid yellow;
-  border-bottom: 15px solid transparent;
+  border-top: 27.5px solid transparent;
+  border-right: 50px solid lightsalmon;
+  border-bottom: 27.5px solid transparent;
   position: absolute;
-  bottom: 0;
-  right: 75px;
+  bottom: 2px;
+  right: 300px;
+  z-index: 2;
 }
 
+.triangle-game-design {
+  width: 0;
+  height: 0;
+  border-top: 27.5px solid transparent;
+  border-right: 50px solid lightseagreen;
+  border-bottom: 27.5px solid transparent;
+  position: absolute;
+  bottom: 2px;
+  right: 300px;
+  z-index: 2;
+}
+
+.triangle-coding {
+  width: 0;
+  height: 0;
+  border-top: 27.5px solid transparent;
+  border-right: 50px solid lightgreen;
+  border-bottom: 27.5px solid transparent;
+  position: absolute;
+  bottom: 2px;
+  right: 300px;
+  z-index: 2;
+}
+
+.triangle-background {
+  width: 0;
+  height: 0;
+  border-top: 29.5px solid transparent;
+  border-right: 54px solid white;
+  border-bottom: 29.5px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+  z-index: 1;
+}
+
+.custom-carousel .carousel-control-prev, .custom-carousel .carousel-control-next {
+  position: absolute;
+  width: auto;
+  padding: 5px;
+}
+
+.custom-carousel .carousel-control-prev {
+  border-right: 2px solid white;
+}
+
+.custom-carousel .carousel-control-next {
+  border-left: 2px solid white;
+}
+
+.custom-carousel {
+  padding-inline: 50px;
+  border: white 2px solid;
+}
 
 
 @keyframes App-logo-spin {
