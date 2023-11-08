@@ -7,7 +7,7 @@ import Gallery from './GalleryPage.js';
 function GameDesign() {
 
     return (
-        <div className="game-design">
+        <div className="game-design page">
             <h1>GAME DESIGN PROJECTS</h1>
             <Gallery images={Images.images} />
         </div>

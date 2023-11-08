@@ -40,7 +40,7 @@ function Gallery({images}) {
                     <Row>
                         <Col xs={15} md={6}>
                             {/* <Image src={selectedImage?.carousel[0]} alt={selectedImage?.alt} fluid /> */}
-                            <Carousel>
+                            <Carousel interval={null}>
                                 {selectedImage?.carousel.map((picture) => (
                                     <Carousel.Item>
                                         <Image src={picture} alt={selectedImage?.alt} fluid />   

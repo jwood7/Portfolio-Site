@@ -5,7 +5,7 @@ import Gallery from './GalleryPage.js';
 function Art() {
 
     return (
-        <div className="coding">
+        <div className="coding page">
             <h1>CODING PROJECTS</h1>
             <Gallery images={Images.images} />
         </div>

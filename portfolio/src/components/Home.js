@@ -27,11 +27,11 @@ function Home() {
     };
 
     return (
-        <div className='home'>
+        <div className='home page'>
             <h1>JACOB WOOD'S PORTFOLIO SITE</h1>
 
             <div className="carousel-box">
-                <Carousel className="custom-carousel game-design">
+                <Carousel className="custom-carousel game-design" interval={null}>
                     {GameItems.images?.reduce((acc, picture, index) => {
                         if (index % 4 === 0) {
                             acc.push([]);
@@ -58,11 +58,11 @@ function Home() {
                 </Carousel>
                 <div className='triangle-game-design'></div>
                 <div className='triangle-background'></div>
-                <Link className="game-design carousel-name" to="/art">GAME DESIGN</Link>
+                <Link className="game-design carousel-name" to="/gamedesign">GAME DESIGN</Link>
             </div>
 
             <div className="carousel-box">
-                <Carousel className="custom-carousel coding">
+                <Carousel className="custom-carousel coding" interval={null}>
                     {ArtItems.images?.reduce((acc, picture, index) => {
                         if (index % 4 === 0) {
                             acc.push([]);
@@ -93,7 +93,7 @@ function Home() {
             </div>
 
             <div className="carousel-box">
-                <Carousel className="custom-carousel art">
+                <Carousel className="custom-carousel art" interval={null}>
                     {ArtItems.images?.reduce((acc, picture, index) => {
                         if (index % 4 === 0) {
                             acc.push([]);
@@ -150,6 +150,7 @@ function Home() {
                             </Carousel>
                         </Col>
                         <Col xs={6} md={3}>
+                            <a href={selectedImage?.link}>{selectedImage?.link}</a>
                             <p>{selectedImage?.text}</p>
                         </Col>
                     </Row>
