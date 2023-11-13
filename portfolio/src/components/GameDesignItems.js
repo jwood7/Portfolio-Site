@@ -22,9 +22,22 @@ import Orbit3 from "../Images/Orbit Screenshot 3.png";
 import Orbit4 from "../Images/Orbit Screenshot 4.png";
 import Orbit5 from "../Images/Orbit Screenshot 5.png";
 import OrbitThumb from "../Images/Orbit Thumb.png";
+import lilpig1 from "../Images/lilpig1.jfif";
+import lilpig2 from "../Images/lilpig2.jfif";
+import lilpig3 from "../Images/lilpig3.jfif";
+import lilpig4 from "../Images/lilpig4.jfif";
+import lilpigthumb from "../Images/lilpigthumb.jpg";
 
 export default {
     images: [
+        {
+            id: 0,
+            carousel: [lilpig1, lilpig2, lilpig3, lilpig4],
+            link: "https://steamcommunity.com/sharedfiles/filedetails/?id=3072567312",
+            thumb: lilpigthumb,
+            alt: 'CS2 Map: Lil Pig',
+            text: "A CS2 map built in the Hammer editor, created in Fall 2023."
+        },
         {
             id: 1,
             carousel: [Orbit1, Orbit2, Orbit3, Orbit4, Orbit5],

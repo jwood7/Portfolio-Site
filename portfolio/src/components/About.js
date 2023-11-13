@@ -3,9 +3,11 @@ import React from 'react';
 function About() {
     return (
         <div className='about page'>
-            <h1>About Me</h1>
-            <p>Hi there! My name is Jacob and I'm a full-stack web developer. I have experience with a variety of technologies including React, Node.js, and MongoDB.</p>
-            <p>I'm passionate about creating clean, efficient code and building web applications that are both functional and beautiful. When I'm not coding, you can usually find me drawing or playing video games.</p>
+            <h1>ABOUT ME</h1>
+            <p> 🎓 I am a recent Computer Science graduate with a Minor in Visual Arts and Technology at Stevens Institute of Technology <br/>
+                🏢 I have work experience with Front End and Full Stack Web Development<br/>
+                🔭 I am working on game design projects, and discord bots that analyze gameplay stats
+            </p>
             <h2>Skills</h2>
             <ul>
                 <li>JavaScript</li>

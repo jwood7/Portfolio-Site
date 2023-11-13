@@ -98,6 +98,7 @@ h1{
   background-color: lightblue;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .carousel-box {
@@ -105,6 +106,8 @@ h1{
   display: inline-block;
   margin: 10px;
   padding-bottom: 27px;
+  
+  width: 75vw;
 }
 
 .carousel-name {

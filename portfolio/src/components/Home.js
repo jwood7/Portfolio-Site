@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import {Link} from 'react-router-dom';
 import ArtItems from './ArtItems.js';
 import GameItems from './GameDesignItems.js';
+import CodingItems from './CodingItems.js';
 import { Image, Row, Col, Modal, Button, Container} from 'react-bootstrap';
 
 
@@ -63,7 +64,7 @@ function Home() {
 
             <div className="carousel-box">
                 <Carousel className="custom-carousel coding" interval={null}>
-                    {ArtItems.images?.reduce((acc, picture, index) => {
+                    {CodingItems.images?.reduce((acc, picture, index) => {
                         if (index % 4 === 0) {
                             acc.push([]);
                         }
