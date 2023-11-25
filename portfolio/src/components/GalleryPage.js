@@ -49,6 +49,7 @@ function Gallery({images}) {
                             </Carousel>
                         </Col>
                         <Col xs={6} md={3}>
+                        {selectedImage?.link ? <a href={selectedImage?.link}>{selectedImage?.linkLabel}</a> : null}
                             <p>{selectedImage?.text}</p>
                         </Col>
                     </Row>

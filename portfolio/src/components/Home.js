@@ -29,6 +29,15 @@ function Home() {
 
     return (
         <div className='home page'>
+            <div className="page-border">
+                {/* <div className="page-border-outer"></div>
+                <div className="home page-border-inner"></div>
+                <div className="white page-border-inner"></div>
+                <div className="white page-border-inner"></div>
+                <div className="white page-border-inner"></div>
+                <div className="white page-border-inner"></div>
+                <div className="white page-border-outer"></div> */}
+            </div>
             <h1>JACOB WOOD'S PORTFOLIO SITE</h1>
 
             <div className="carousel-box">

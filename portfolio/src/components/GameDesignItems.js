@@ -34,6 +34,7 @@ export default {
             id: 0,
             carousel: [lilpig1, lilpig2, lilpig3, lilpig4],
             link: "https://steamcommunity.com/sharedfiles/filedetails/?id=3072567312",
+            linkLabel: "Steam Workshop Page",
             thumb: lilpigthumb,
             alt: 'CS2 Map: Lil Pig',
             text: "A CS2 map built in the Hammer editor, created in Fall 2023."
@@ -42,6 +43,7 @@ export default {
             id: 1,
             carousel: [Orbit1, Orbit2, Orbit3, Orbit4, Orbit5],
             link: "https://yakobay.itch.io/orbit",
+            linkLabel: "Itch.io",
             thumb: OrbitThumb,
             alt: 'Orbit Game',
             text: 'A 3d space flight game made in Unity, initially for Game Design III at Stevens Institute of Technology in Spring 2023.',
@@ -50,6 +52,7 @@ export default {
             id: 2,
             carousel: [Jo1, Jo2, Jo3, Jo4],
             link: "https://yakobay.itch.io/jo-the-space-janitor",
+            linkLabel: "Itch.io",
             thumb: JoThumb,
             alt: 'Jo The Space Janitor 3D',
             text: 'Final project made for Game Design II at Stevens Institute of Technology in Spring 2022. A Unity3D game where you vacuum up slime, upgrade a vacuum, and open doors.',
@@ -58,6 +61,7 @@ export default {
             id: 3,
             carousel: [FranksCleaning1, FranksCleaning2, FranksCleaning3],
             link: "https://yakobay.itch.io/franks-cleaning-service",
+            linkLabel: "Itch.io",
             thumb: FranksCleaningThumb,
             alt: "Frank's Cleaning Service",
             text: 'Final project made for Game Design I at Stevens Institue of Technology in Fall 2021. A 2D platformer made in Unity where you play as a space janitor who cleans up slime and uses a vacuum to fly.',
@@ -66,6 +70,7 @@ export default {
             id: 4,
             carousel: [Davis],
             link: "https://yakobay.itch.io/davis-kitchen",
+            linkLabel: "Itch.io",
             thumb: DavisThumb,
             alt: 'Davis Kitchen',
             text: 'A 3D environment made in Unity, created for Game Design II at Stevens Institute of Technology in Spring 2022. '
@@ -74,6 +79,7 @@ export default {
             id: 5,
             carousel: [FreeTheFish],
             link: "https://yakobay.itch.io/free-the-fish",
+            linkLabel: "Itch.io",
             thumb: FreeTheFishThumb,
             alt: 'Free The Fish',
             text: 'Created as a point-and-click/escape room game for Game Design I at Stevens Institute of Technology in Fall 2021. Made in Unity.'
@@ -82,6 +88,7 @@ export default {
             id: 6,
             carousel: [Alice],
             link: "https://yakobay.itch.io/alice-in-wonderland",
+            linkLabel: "Itch.io",
             thumb: AliceThumb,
             alt: 'Alice In Wonderland',
             text: 'A bitsy recreation of Alice in Wonderland, made in Fall 2021 for Game Design I at Stevens Institute of Technology.'
@@ -90,6 +97,7 @@ export default {
             id: 7,
             carousel: [ThreeLittlePigs],
             link: "https://yakobay.itch.io/three-little-pigs",
+            linkLabel: "Itch.io",
             thumb: ThreeLittlePigs,
             alt: 'Three Little Pigs',
             text: 'A bitsy recreation of The Three Little Pigs, made in Fall 2021 for Game Design I at Stevens Institute of Technology.'

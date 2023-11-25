@@ -6,16 +6,21 @@ import About from './components/About';
 import GameDesign from './components/GameDesign';
 import Coding from './components/Coding';
 import Art from './components/Art';
+// import TurtleLandscape from './images/Turtle Landscape.PNG';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+        
+        <h1 className="Landing-Page">JACOB WOOD</h1>
+        <header className="App-header" style= {{ backgroundImage: "url(/Turtle-Landscape.PNG"}}>
+          
+        
           <nav>
                 <Link className="header-link home" to="/">Home</Link>
                 <Link className="header-link about" to="/about">About</Link>
-                <Link className="header-link game-design" to="/gamedesign">Game Design</Link>
+                <Link className="header-link game-design" to="/gamedesign">Games</Link>
                 <Link className="header-link coding" to="/coding">Coding</Link>
                 <Link className="header-link art" to="/art">Art</Link>
           </nav>

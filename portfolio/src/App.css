@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=League+Spartan');
+
 .App {
   text-align: center;
+  font-family: 'League Spartan', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial';
+  color: white;
 }
 
 .App-logo {
@@ -14,41 +18,49 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 10;
+  background-color: #2E2D4D;
+  min-height: 90vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: right;
+  align-items: flex-end;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 2.5vh;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.Landing-Page {
+  font-size: 7rem;
+  width: 100%;
+  position: absolute;
+  bottom: 40%;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   font-size: calc(10px + 2vmin);
   color: white;
   width: 75%;
-  padding-right: 5%;
+  /* padding-right: 5%; */
   
   text-align: center;
 
 }
 
 a:link{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -63,42 +75,60 @@ h1{
   height: 0; */
   width: 20vw;
   /* padding-top: 2vh; */
-  border-radius: 5vw 5vw 0 0;
+  border-radius: 10vw 10vw 0 0;
   text-align: center;
   align-items: center;
   justify-content: center;
   /* display: inline; */
   margin: 2vh 0.25vw 0 0.25vw;
+  border-top: 1vh solid transparent;
+  border-bottom: 0.25vw solid transparent;
+  position:relative;
   
 }
 
+/* .header-inner{
+  position: absolute;
+  top: -8%;
+  left: 1%;
+  z-index: 1;
+  width: 98%;
+  border-radius: 10vw 10vw 0 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+} */
+
+
 .header-link:hover{
-  border-top: 1vh solid transparent;
+  border-top: 1.5vh solid transparent;
   margin-top: 0.5vh;
-  color: white;
-}
-
-.game-design {
-  background-color: lightseagreen;
-}
-
-.art {
-  background-color: lightsalmon;
-}
-
-.about {
-  background-color: lightslategray;
-}
-
-.coding {
-  background-color: lightgreen;
+  /* color: white; */
+  text-decoration: underline;
+  text-align: center;
 }
 
 .home {
-  background-color: lightblue;
+  background-color: #36393e;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about {
+  background-color: #424549;
+}
+
+.game-design {
+  background-color: #D66853;
+}
+
+.coding {
+  background-color: #26A96C;
+}
+
+.art {
+  background-color: #4BA3C3;
 }
 
 .carousel-box {
@@ -131,7 +161,7 @@ h1{
   width: 0;
   height: 0;
   border-top: 27.5px solid transparent;
-  border-right: 50px solid lightsalmon;
+  border-right: 50px solid #4BA3C3;
   border-bottom: 27.5px solid transparent;
   position: absolute;
   bottom: 2px;
@@ -143,7 +173,7 @@ h1{
   width: 0;
   height: 0;
   border-top: 27.5px solid transparent;
-  border-right: 50px solid lightseagreen;
+  border-right: 50px solid #D66853;
   border-bottom: 27.5px solid transparent;
   position: absolute;
   bottom: 2px;
@@ -155,7 +185,7 @@ h1{
   width: 0;
   height: 0;
   border-top: 27.5px solid transparent;
-  border-right: 50px solid lightgreen;
+  border-right: 50px solid #26A96C;
   border-bottom: 27.5px solid transparent;
   position: absolute;
   bottom: 2px;
@@ -196,8 +226,54 @@ h1{
 
 .page {
   padding-bottom: 23vh;
+  /* border-top: 2px solid white; */
 }
 
+.page-border {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.page-border-inner{
+  height: 2px;
+  width: 15vw;
+}
+
+.page-border-outer{
+  height: 2px;
+  background-color: white;
+  width: 12.5vw;
+}
+
+.white{
+  background-color: white;
+}
+
+
+.split{
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-div{
+  width: 35vw;
+  margin: 10vh 2vw;
+}
+
+.profile-image{
+  width: 200px;
+  height: 200px;
+}
+
+.skill-image{
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
 
 @keyframes App-logo-spin {
   from {
