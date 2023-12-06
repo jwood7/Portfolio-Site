@@ -38,7 +38,7 @@ function Home() {
                 <div className="white page-border-inner"></div>
                 <div className="white page-border-outer"></div> */}
             </div>
-            <h1>JACOB WOOD'S PORTFOLIO SITE</h1>
+            <h1>WELCOME TO MY PORTFOLIO SITE!</h1>
 
             <div className="carousel-box">
                 <Carousel className="custom-carousel game-design" interval={null}>
@@ -52,14 +52,15 @@ function Home() {
                         <Carousel.Item>
                             <Row xs={2} md={4} class="g-4">
                                 {pictureSet.map((picture) => (
-                                    <Col key={picture.id}>
-                                        <Image
-                                            src={picture.thumb}
-                                            alt={picture.alt}
-                                            fluid
-                                            onClick={() => handleImageClick(picture)}
-                                        />
-                                    </Col>
+                                    <div className="hover-image">
+                                    <Image
+                                        src={picture.thumb}
+                                        alt={picture.alt}
+                                        fluid
+                                        onClick={() => handleImageClick(picture)}
+                                    /> 
+                                    <div className="overlay" onClick={() => handleImageClick(picture)}>{picture.alt}</div> 
+                                    </div>
                                 ))}
                             </Row>
                             {/* Add spacers on the ends of each picture set so that the arrows don't block the images to open modals */}
@@ -84,12 +85,15 @@ function Home() {
                             <Row xs={2} md={4} class="g-4">
                                 {pictureSet.map((picture) => (
                                     <Col key={picture.id}>
+                                        <div className="hover-image">
                                         <Image
                                             src={picture.thumb}
                                             alt={picture.alt}
                                             fluid
                                             onClick={() => handleImageClick(picture)}
-                                        />
+                                        /> 
+                                        <div className="overlay" onClick={() => handleImageClick(picture)}>{picture.alt}</div> 
+                                        </div>
                                     </Col>
                                 ))}
                             </Row>
@@ -115,12 +119,15 @@ function Home() {
                             <Row xs={2} md={4} class="no-gutters">
                                 {pictureSet.map((picture) => (
                                     <Col key={picture.id}>
+                                        <div className="hover-image">
                                         <Image
                                             src={picture.thumb}
                                             alt={picture.alt}
                                             fluid
                                             onClick={() => handleImageClick(picture)}
-                                        />
+                                        /> 
+                                        <div className="overlay" onClick={() => handleImageClick(picture)}>{picture.alt}</div> 
+                                        </div>
                                     </Col>
                                 ))}
                             </Row>
@@ -133,14 +140,6 @@ function Home() {
                 <Link className="art carousel-name" to="/art">ART PROJECTS</Link>
             </div>
 
-            
-            
-            
-            {/* Need to make a class to align text to the right */}
-            <div className="about-link"> 
-                <Link to="/about">About Me</Link>
-            </div>
-
 
 
             <Modal show={showModal} onHide={handleCloseModal} size="xl">
@@ -148,22 +147,24 @@ function Home() {
                     <Modal.Title>{selectedImage?.alt}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Row>
-                        <Col xs={15} md={6}>
-                            {/* <Image src={selectedImage?.carousel[0]} alt={selectedImage?.alt} fluid /> */}
-                            <Carousel>
-                                {selectedImage?.carousel.map((picture) => (
-                                    <Carousel.Item>
-                                        <Image src={picture} alt={selectedImage?.alt} fluid />   
-                                    </Carousel.Item>
-                                ))}
-                            </Carousel>
-                        </Col>
-                        <Col xs={6} md={3}>
-                            <a href={selectedImage?.link}>{selectedImage?.link}</a>
-                            <p>{selectedImage?.text}</p>
-                        </Col>
-                    </Row>
+                    <Container>
+                        <Row>
+                            <Col>
+                                {/* <Image src={selectedImage?.carousel[0]} alt={selectedImage?.alt} fluid /> */}
+                                <Carousel>
+                                    {selectedImage?.carousel.map((picture) => (
+                                        <Carousel.Item >
+                                            <Image src={picture} alt={selectedImage?.alt} fluid /> 
+                                        </Carousel.Item>
+                                    ))}
+                                </Carousel>
+                            </Col>
+                            <Col>
+                                <a href={selectedImage?.link}>{selectedImage?.link}</a>
+                                <p>{selectedImage?.text}</p>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseModal}>

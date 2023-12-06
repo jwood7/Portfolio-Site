@@ -7,7 +7,7 @@ import CSS from '../Images/Logos/CSS3.png';
 import Blender from '../Images/Logos/Blender.png';
 import Django from '../Images/Logos/Django.jpg';
 import Gatsbyjs from '../Images/Logos/gatsbyJS.png';
-import Github from '../Images/Logos/github.png';
+import Github from '../Images/Logos/github-mark-white.svg';
 import HTML5 from '../Images/Logos/html5.png';
 import Javascript from '../Images/Logos/JavaScript.png';
 import java from '../Images/Logos/java.svg';
@@ -66,10 +66,10 @@ export default {
             image: MongoDB,
             label: "MongoDB",
         },
-        {
-            image: Ajax,
-            label: "Ajax",
-        },
+        // {
+        //     image: Ajax,
+        //     label: "Ajax",
+        // },
         {
             image: Bootstrap,
             label: "Bootstrap",

@@ -6,6 +6,10 @@ import About from './components/About';
 import GameDesign from './components/GameDesign';
 import Coding from './components/Coding';
 import Art from './components/Art';
+import LinkedIn from './Images/Logos/linkedin-white.png';
+import Github from './Images/Logos/github-mark-white.svg';
+import Itch from './Images/Logos/itchio-textless-white.svg';
+import Image from 'react-bootstrap/Image';
 // import TurtleLandscape from './images/Turtle Landscape.PNG';
 
 function App() {
@@ -14,6 +18,7 @@ function App() {
       <div className="App">
         
         <h1 className="Landing-Page">JACOB WOOD</h1>
+        <h2 className="Byline">Coder | Game Designer | Artist</h2>
         <header className="App-header" style= {{ backgroundImage: "url(/Turtle-Landscape.PNG"}}>
           
         
@@ -45,6 +50,11 @@ function App() {
           <Route path="/art" element={<Art />} />
         </Routes>
       </div>
+      <footer className="App-footer">
+        <a href="https://github.com/jwood7"><Image src={Github} alt="Github" height={50}/></a>
+        <a href="https://www.linkedin.com/in/jacobwood176/"><Image src={LinkedIn} alt="LinkedIn" height={50}/></a>
+        <a href="https://yakobay.itch.io/"><Image src={Itch} alt="Itch.io" height={50}/></a>
+      </footer>
      
     </Router>
     

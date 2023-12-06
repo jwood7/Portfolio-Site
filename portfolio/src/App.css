@@ -19,7 +19,7 @@
 
 .App-header {
   background-color: #2E2D4D;
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -27,6 +27,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding-top: 2.5vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-footer {
+  background-color: #2E2D4D;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 2% 40%;
 }
 
 .App-link {
@@ -34,10 +48,18 @@
 }
 
 .Landing-Page {
-  font-size: 7rem;
+  /* font-size: 7rem; */
+  font-size: calc(0.5rem + 15vmin);
   width: 100%;
   position: absolute;
-  bottom: 40%;
+  bottom: 35%;
+}
+
+.Byline {
+  font-size: calc(0.5rem + 4vmin);
+  width: 100%;
+  position: absolute;
+  bottom: 38%;
 }
 
 nav {
@@ -47,7 +69,8 @@ nav {
   /* justify-content: space-between; */
   font-size: calc(10px + 2vmin);
   color: white;
-  width: 75%;
+  min-width: 75%;
+  max-width: 1000px;
   /* padding-right: 5%; */
   
   text-align: center;
@@ -66,6 +89,11 @@ a:visited {
 
 h1{
   padding: 10vh 10vw;
+}
+
+p{
+  font-size: calc(10px + 1vmin);
+  text-align: justify;
 }
 
 .header-link {
@@ -136,8 +164,7 @@ h1{
   display: inline-block;
   margin: 10px;
   padding-bottom: 27px;
-  
-  width: 75vw;
+  width: 75vw;;
 }
 
 .carousel-name {
@@ -151,11 +178,18 @@ h1{
   width: 300px;
   text-align: left;
   padding-left: 15px;
-  z-index: 2;
+  z-index: 30;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   border-top: 2px solid white;
 }
+
+/* .carousel-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid white;
+} */
 
 .triangle-art {
   width: 0;
@@ -166,7 +200,7 @@ h1{
   position: absolute;
   bottom: 2px;
   right: 300px;
-  z-index: 2;
+  z-index: 20;
 }
 
 .triangle-game-design {
@@ -178,7 +212,7 @@ h1{
   position: absolute;
   bottom: 2px;
   right: 300px;
-  z-index: 2;
+  z-index: 20;
 }
 
 .triangle-coding {
@@ -190,7 +224,7 @@ h1{
   position: absolute;
   bottom: 2px;
   right: 300px;
-  z-index: 2;
+  z-index: 20;
 }
 
 .triangle-background {
@@ -202,7 +236,7 @@ h1{
   position: absolute;
   bottom: 0;
   right: 300px;
-  z-index: 1;
+  z-index: 15;
 }
 
 .custom-carousel .carousel-control-prev, .custom-carousel .carousel-control-next {
@@ -220,8 +254,43 @@ h1{
 }
 
 .custom-carousel {
-  padding-inline: 50px;
   border: white 2px solid;
+  padding: 10px 50px;
+}
+
+.carousel-item {
+  position: relative;
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: cover; */
+  /* border: 2px solid white; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(124, 122, 122, 0.4);
+  /* background-color: rgba(255,255,255,0.5); */
+  /* background-color: red; */
+  z-index: 10;
+  color: white;
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+  padding: 45% 0;
+}
+
+.hover-image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hover-image:hover .overlay{
+  opacity: 1;
+
 }
 
 .page {
@@ -253,20 +322,26 @@ h1{
 
 .split{
   display: flex;
-  flex-direction: row;
   align-items: top;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
+  flex-wrap: wrap-reverse;
 }
 
 .about-div{
-  width: 35vw;
-  margin: 10vh 2vw;
+  width: 40vw;
+  min-width: 350px;
+  margin-top: 5%;
+  padding: 10px;
 }
 
 .profile-image{
-  width: 200px;
-  height: 200px;
+  max-width: 10vw;
+  max-height: 10vw;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 100%;
+  margin-bottom: 30px;
 }
 
 .skill-image{
@@ -281,5 +356,22 @@ h1{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 920px) {
+  .about-div{
+    width: 100vw;
+    margin-top: 5%;
+    padding: 10px 10%;
+  }
+  .hello{
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .carousel-box{
+    display: none;
   }
 }

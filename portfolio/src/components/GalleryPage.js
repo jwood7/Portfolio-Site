@@ -22,12 +22,15 @@ function Gallery({images}) {
             <Row xs={2} md={4} className="g-4">
                 {images.map((image) => (
                     <Col key={image.id}>
+                        <div className="hover-image">
                         <Image
                             src={image.thumb}
                             alt={image.alt}
                             fluid
                             onClick={() => handleImageClick(image)}
                         />
+                        <div className="overlay" onClick={() => handleImageClick(image)}>{image.alt}</div> 
+                        </div>
                     </Col>
                 ))}
             </Row>
@@ -37,22 +40,24 @@ function Gallery({images}) {
                     <Modal.Title>{selectedImage?.alt}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Row>
-                        <Col xs={15} md={6}>
-                            {/* <Image src={selectedImage?.carousel[0]} alt={selectedImage?.alt} fluid /> */}
-                            <Carousel interval={null}>
-                                {selectedImage?.carousel.map((picture) => (
-                                    <Carousel.Item>
-                                        <Image src={picture} alt={selectedImage?.alt} fluid />   
-                                    </Carousel.Item>
-                                ))}
-                            </Carousel>
-                        </Col>
-                        <Col xs={6} md={3}>
-                        {selectedImage?.link ? <a href={selectedImage?.link}>{selectedImage?.linkLabel}</a> : null}
-                            <p>{selectedImage?.text}</p>
-                        </Col>
-                    </Row>
+                    <Container>
+                        <Row>
+                            <Col>
+                                {/* <Image src={selectedImage?.carousel[0]} alt={selectedImage?.alt} fluid /> */}
+                                <Carousel interval={null}>
+                                    {selectedImage?.carousel.map((picture) => (
+                                        <Carousel.Item>
+                                            <Image src={picture} alt={selectedImage?.alt} title={selectedImage?.alt} fluid />   
+                                        </Carousel.Item>
+                                    ))}
+                                </Carousel>
+                            </Col>
+                            <Col>
+                            {selectedImage?.link ? <a href={selectedImage?.link}>{selectedImage?.linkLabel}</a> : null}
+                                <p>{selectedImage?.text}</p>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseModal}>
