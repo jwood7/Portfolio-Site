@@ -94,6 +94,8 @@ h1{
 p{
   font-size: calc(10px + 1vmin);
   text-align: justify;
+  white-space: pre-wrap;
+  min-width: 300px;
 }
 
 .header-link {
@@ -349,6 +351,31 @@ p{
   height: 80px;
   margin: 5px;
 }
+
+
+.link-label:link {
+  color: black;
+  text-decoration: none;
+}
+
+.link-label:visited{
+  color: black;
+  text-decoration: none;
+}
+
+.link-img{
+  width: 50px;
+  padding: 0 5px 4px 0px;
+}
+
+.modal-image{
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 300px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
 
 @keyframes App-logo-spin {
   from {

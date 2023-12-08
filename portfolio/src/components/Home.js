@@ -5,6 +5,7 @@ import ArtItems from './ArtItems.js';
 import GameItems from './GameDesignItems.js';
 import CodingItems from './CodingItems.js';
 import { Image, Row, Col, Modal, Button, Container} from 'react-bootstrap';
+import linkImage from '../Images/Logos/link.png';
 
 
 // TODO: Make carousel smaller, see if you can make it have multiple images at once (just do multiple images per carousel items)
@@ -29,15 +30,6 @@ function Home() {
 
     return (
         <div className='home page'>
-            <div className="page-border">
-                {/* <div className="page-border-outer"></div>
-                <div className="home page-border-inner"></div>
-                <div className="white page-border-inner"></div>
-                <div className="white page-border-inner"></div>
-                <div className="white page-border-inner"></div>
-                <div className="white page-border-inner"></div>
-                <div className="white page-border-outer"></div> */}
-            </div>
             <h1>WELCOME TO MY PORTFOLIO SITE!</h1>
 
             <div className="carousel-box">
@@ -160,8 +152,8 @@ function Home() {
                                 </Carousel>
                             </Col>
                             <Col>
-                                <a href={selectedImage?.link}>{selectedImage?.link}</a>
                                 <p>{selectedImage?.text}</p>
+                                {selectedImage?.link ? <a className="link-label" href={selectedImage?.link}><Image className="link-img" src={linkImage}/>{selectedImage?.linkLabel}</a> : null}
                             </Col>
                         </Row>
                     </Container>

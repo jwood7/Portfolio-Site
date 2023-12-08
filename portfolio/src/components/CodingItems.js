@@ -18,7 +18,7 @@ export default {
             thumb: PortfolioWebsiteThumb,
             link: "https://github.com/jwood7/Portfolio-Site",
             linkLabel: "GitHub",
-            alt: 'Portfolio Website',
+            alt: 'Website: Portfolio Site',
             text: 'A react app that displays my game design, art, and coding projects. Created in the winter of 2023.',
         },
         {
@@ -27,7 +27,7 @@ export default {
             thumb: BalanceBot,
             link: "https://github.com/jwood7/BalanceBot",
             linkLabel: "GitHub",
-            alt: 'Balance Bot',
+            alt: 'Discord Bot: Balance Bot',
             text: 'A discord bot that connects to two separate APIs to gather info on player stats, and then balances them between teams. Created in the fall of 2023.',
         },
         {
@@ -36,7 +36,7 @@ export default {
             thumb: VoteBot,
             link: "https://github.com/jwood7/VoteBot",
             linkLabel: "GitHub",
-            alt: 'Vote Bot',
+            alt: 'Discord Bot: Vote Bot',
             text: 'A discord bot that allows users to rate Counterstrike maps on a scale of 1-5 on the site stats.geekfestclan.com, and then displays the results. Created in the summer of 2023.',
         },
         {
@@ -45,7 +45,7 @@ export default {
             thumb: ThotifyThumb,
             link:"https://github.com/jwood7/SpotifyMatchSite",
             linkLabel: "GitHub",
-            alt: 'Spotify Matching Site',
+            alt: 'Website: Spotify Matching Site',
             text: 'A website that matches you with a friend based on your Spotify listening history. Created for Web Development III in Fall 2022.',
         },
         

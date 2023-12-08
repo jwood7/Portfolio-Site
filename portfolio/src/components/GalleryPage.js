@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image, Button, Modal } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import linkImage from '../Images/Logos/link.png';
 
 function Gallery({images}) {
     const [showModal, setShowModal] = React.useState(false);
@@ -47,14 +48,14 @@ function Gallery({images}) {
                                 <Carousel interval={null}>
                                     {selectedImage?.carousel.map((picture) => (
                                         <Carousel.Item>
-                                            <Image src={picture} alt={selectedImage?.alt} title={selectedImage?.alt} fluid />   
+                                            <Image className="modal-image" src={picture} alt={selectedImage?.alt} title={selectedImage?.alt} />   
                                         </Carousel.Item>
                                     ))}
                                 </Carousel>
                             </Col>
                             <Col>
-                            {selectedImage?.link ? <a href={selectedImage?.link}>{selectedImage?.linkLabel}</a> : null}
-                                <p>{selectedImage?.text}</p>
+                            <p>{selectedImage?.text}</p>
+                            {selectedImage?.link ? <a className="link-label" href={selectedImage?.link}><Image className="link-img" src={linkImage}/>{selectedImage?.linkLabel}</a> : null}
                             </Col>
                         </Row>
                     </Container>
