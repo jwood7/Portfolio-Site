@@ -25,8 +25,8 @@ function App() {
           <nav>
                 <Link className="header-link home" to="/">Home</Link>
                 <Link className="header-link about" to="/about">About</Link>
-                <Link className="header-link game-design" to="/gamedesign">Games</Link>
                 <Link className="header-link coding" to="/coding">Coding</Link>
+                <Link className="header-link game-design" to="/gamedesign">Games</Link>
                 <Link className="header-link art" to="/art">Art</Link>
           </nav>
           {/* <img src={logo} className="App-logo" alt="logo" />
@@ -45,8 +45,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/gamedesign" element={<GameDesign />} />
           <Route path="/coding" element={<Coding />} />
+          <Route path="/gamedesign" element={<GameDesign />} />
           <Route path="/art" element={<Art />} />
         </Routes>
       </div>

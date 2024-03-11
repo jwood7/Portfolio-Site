@@ -32,37 +32,7 @@ function Home() {
         <div className='home page'>
             <h1>WELCOME TO MY PORTFOLIO SITE!</h1>
 
-            <div className="carousel-box">
-                <Carousel className="custom-carousel game-design" interval={null}>
-                    {GameItems.images?.reduce((acc, picture, index) => {
-                        if (index % 4 === 0) {
-                            acc.push([]);
-                        }
-                        acc[acc.length - 1].push(picture);
-                        return acc;
-                    }, []).map((pictureSet) => (
-                        <Carousel.Item>
-                            <Row xs={2} md={4} class="g-4">
-                                {pictureSet.map((picture) => (
-                                    <div className="hover-image">
-                                    <Image
-                                        src={picture.thumb}
-                                        alt={picture.alt}
-                                        fluid
-                                        onClick={() => handleImageClick(picture)}
-                                    /> 
-                                    <div className="overlay" onClick={() => handleImageClick(picture)}>{picture.alt}</div> 
-                                    </div>
-                                ))}
-                            </Row>
-                            {/* Add spacers on the ends of each picture set so that the arrows don't block the images to open modals */}
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
-                <div className='triangle-game-design'></div>
-                <div className='triangle-background'></div>
-                <Link className="game-design carousel-name" to="/gamedesign">GAME DESIGN</Link>
-            </div>
+            
 
             <div className="carousel-box">
                 <Carousel className="custom-carousel coding" interval={null}>
@@ -96,6 +66,40 @@ function Home() {
                 <div className='triangle-coding'></div>
                 <div className='triangle-background'></div>
                 <Link className="coding carousel-name" to="/coding">CODING PROJECTS</Link>
+            </div>
+
+            <div className="carousel-box">
+                <Carousel className="custom-carousel game-design" interval={null}>
+                    {GameItems.images?.reduce((acc, picture, index) => {
+                        if (index % 4 === 0) {
+                            acc.push([]);
+                        }
+                        acc[acc.length - 1].push(picture);
+                        return acc;
+                    }, []).map((pictureSet) => (
+                        <Carousel.Item>
+                            <Row xs={2} md={4} class="g-4">
+                                {pictureSet.map((picture) => (
+                                    <Col key={picture.id}>
+                                        <div className="hover-image">
+                                        <Image
+                                            src={picture.thumb}
+                                            alt={picture.alt}
+                                            fluid
+                                            onClick={() => handleImageClick(picture)}
+                                        /> 
+                                        <div className="overlay" onClick={() => handleImageClick(picture)}>{picture.alt}</div> 
+                                        </div>
+                                    </Col>
+                                ))}
+                            </Row>
+                            {/* Add spacers on the ends of each picture set so that the arrows don't block the images to open modals */}
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
+                <div className='triangle-game-design'></div>
+                <div className='triangle-background'></div>
+                <Link className="game-design carousel-name" to="/gamedesign">GAME DESIGN</Link>
             </div>
 
             <div className="carousel-box">
