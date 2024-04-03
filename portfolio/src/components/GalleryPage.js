@@ -38,11 +38,16 @@ function Gallery({images}) {
 
             <Modal show={showModal} onHide={handleCloseModal} size="xl">
                 <Modal.Header closeButton>
-                    <Modal.Title>{selectedImage?.alt}</Modal.Title>
+                    {/* <Modal.Title>{selectedImage?.alt}</Modal.Title> */}
                 </Modal.Header>
                 <Modal.Body>
                     <Container>
                         <Row>
+                            <Col>
+                            <h2>{selectedImage?.alt}</h2>
+                            <p>{selectedImage?.text}</p>
+                            {selectedImage?.link ? <a className="link-label" href={selectedImage?.link}><Image className="link-img" src={linkImage}/>{selectedImage?.linkLabel}</a> : null}
+                            </Col>
                             <Col>
                                 {/* <Image src={selectedImage?.carousel[0]} alt={selectedImage?.alt} fluid /> */}
                                 <Carousel interval={null}>
@@ -52,10 +57,6 @@ function Gallery({images}) {
                                         </Carousel.Item>
                                     ))}
                                 </Carousel>
-                            </Col>
-                            <Col>
-                            <p>{selectedImage?.text}</p>
-                            {selectedImage?.link ? <a className="link-label" href={selectedImage?.link}><Image className="link-img" src={linkImage}/>{selectedImage?.linkLabel}</a> : null}
                             </Col>
                         </Row>
                     </Container>
