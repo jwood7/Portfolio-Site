@@ -19,7 +19,7 @@ export default {
             link: "http://138.197.28.234/",
             linkLabel: "Beauty Plus Website",
             alt: 'Website: Beauty Plus',
-            text: 'A website built for the Beauty Plus Network using Gatsby, React, and TypeScript, based on their old website. Work in progress as of the winter of 2024. Will eventually replace the old wordpress site at https://beautyplusnetwork.org/'
+            text: 'A website built for a contract with the Beauty Plus Network using Gatsby, React, and TypeScript, based on an older Wordpress site. Now hosted on a Digital Ocean Droplet, using NGINX and Ubuntu at https://beautyplusnetwork.org/'
         },
         {
             id: 4,
@@ -28,7 +28,7 @@ export default {
             link: "https://github.com/jwood7/Portfolio-Site",
             linkLabel: "GitHub",
             alt: 'Website: Portfolio Site',
-            text: 'A react app that displays my game design, art, and coding projects. Created in the winter of 2023.',
+            text: 'A react app that displays my game design, art, and coding projects. Hosted on a Digital Ocean Droplet, using NGINX and Ubuntu. Created in the winter of 2023.',
         },
         {
             id: 3,
