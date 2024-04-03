@@ -321,6 +321,10 @@ p{
   background-color: white;
 }
 
+.light-grey{
+  background-color: lightgray;
+}
+
 
 .split{
   display: flex;
