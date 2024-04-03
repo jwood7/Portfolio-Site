@@ -37,7 +37,7 @@ function Gallery({images}) {
             </Row>
 
             <Modal show={showModal} onHide={handleCloseModal} size="xl">
-                <Modal.Header closeButton>
+                <Modal.Header className="light-grey" closeButton>
                     {/* <Modal.Title>{selectedImage?.alt}</Modal.Title> */}
                 </Modal.Header>
                 <Modal.Body>
