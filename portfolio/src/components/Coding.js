@@ -6,7 +6,7 @@ function Art() {
 
     return (
         <div className="coding page">
-            <h1>CODING PROJECTS</h1>
+            <h1> WEB DEVELOPMENT AND CODING PROJECTS</h1>
             <Gallery images={Images.images} />
         </div>
     );

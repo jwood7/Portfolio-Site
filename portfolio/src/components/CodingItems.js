@@ -10,9 +10,21 @@ import Thotify5 from '../Images/Thotify5.png';
 import Thotify6 from '../Images/Thotify6.png';
 import ThotifyThumb from '../Images/ThotifyThumb.png';
 import BeautyPlus from '../Images/Beauty_Plus.png';
+import ParkingAppThumb from '../Images/ParkingAppThumb.png';
+import ParkingApp1 from '../Images/ParkingApp1.png';
+import ParkingApp2 from '../Images/ParkingApp2.png';
+import ParkingApp3 from '../Images/ParkingApp3.png';
 
 export default {
     images: [
+        {id: 6,
+            carousel: [ParkingApp1, ParkingApp2, ParkingApp3],
+            thumb: ParkingAppThumb,
+            link: "https://www.figma.com/file/G2I6Ch6BnQPilwrtgFLn7O/Untitled?type=design&node-id=101-826&mode=design&t=yDr4Fc2xnrDtSjAc-0",
+            linkLabel: "Figma",
+            alt: 'Web Design: Parking Assistant Mobile',
+            text: 'A frontend design for a parking app, created for a contract with MindIT. Created in the spring of 2024, using Figma and then CSS.'
+        },
         {id: 5,
             carousel: [BeautyPlus],
             thumb: BeautyPlus,
@@ -46,7 +58,7 @@ export default {
             link: "https://github.com/jwood7/VoteBot",
             linkLabel: "GitHub",
             alt: 'Discord Bot: Vote Bot',
-            text: 'A discord bot that allows users to rate Counterstrike maps on a scale of 1-5 on the site stats.geekfestclan.com, and then displays the results. Created in the summer of 2023.',
+            text: 'A discord bot that allows users to rate Counterstrike maps on a scale of 1-5 on the site stats.geekfestclan.com, and then displays the results. It also retrieves the workshop id of the map for admins to use to open the map in-game. Created in the summer of 2023.',
         },
         {
             id: 1,
